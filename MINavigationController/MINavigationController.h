@@ -15,6 +15,7 @@
 @property (nonatomic, weak) id<RootViewControllerDelegate>delegate;
 - (instancetype)initWithViewControllers:(NSArray*)viewController;
 - (void)transitionToViewControllerAtIndex:(NSInteger)index;
+- (void)setViewController:(UIViewController*)viewController atIndex:(NSInteger)index;
 @end
 
 

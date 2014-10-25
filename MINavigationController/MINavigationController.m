@@ -78,6 +78,14 @@
     }
 }
 
+- (void)setViewController:(UIViewController*)viewController atIndex:(NSInteger)index {
+    if([self.viewControllers count] >= index){
+        NSMutableArray *mutableCopy = [self.viewControllers mutableCopy];
+        [mutableCopy setObject:viewController atIndexedSubscript:index];
+        self.viewControllers = mutableCopy;
+    }
+}
+
 - (void)_transitionToChildViewController:(UIViewController*)toViewController{
     
     UIViewController *fromViewController = ([self.childViewControllers count] > 0 ? self.childViewControllers[0] : nil);
