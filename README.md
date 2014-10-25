@@ -20,7 +20,7 @@ You can also change the windows root view controller, and attempt to animate bet
 ##Enter MINavigationController
 MINavigationController makes this problem go away, by becoming a navigation controller like object.  It hosts an array of view controllers, and animates between them.  
 
-![MINavigationViewController](https://github.com/ivedix/MINavigationController/MINavigationController.gif "")
+![MINavigationViewController](https://github.com/ivedix/MINavigationController/blob/master/MINavigationController.gif "")
 
 ##Usage
 To Setup the MINavigationController 
